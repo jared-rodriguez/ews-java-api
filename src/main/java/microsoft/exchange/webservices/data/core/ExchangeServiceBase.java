@@ -485,11 +485,11 @@ public abstract class ExchangeServiceBase implements Closeable {
    */
   public void validate() throws ServiceLocalException {
     // E14:302056 -- Allow clients to add HTTP request headers with 'X-' prefix but no others.
-    for (Map.Entry<String, String> key : this.httpHeaders.entrySet()) {
-      if (!key.getKey().startsWith(ExtendedHeaderPrefix)) {
-        throw new ServiceValidationException(String.format("HTTP header '%s' isn't permitted. Only HTTP headers with the 'X-' prefix are permitted.", key));
-      }
-    }
+    //for (Map.Entry<String, String> key : this.httpHeaders.entrySet()) {
+     // if (!key.getKey().startsWith(ExtendedHeaderPrefix)) {
+     //   throw new ServiceValidationException(String.format("HTTP header '%s' isn't permitted. Only HTTP headers with the 'X-' prefix are permitted.", key));
+     // }
+    //}
   }
 
   /**
